@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyrie</title>
+
+    <!-- CDN slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="logo">
+            <a href="">Kyrie</a>
+        </div>
+        <div class="nav_title">作品集</div>
+        <div class="abut_icon">
+            <a href=""><img src="./img/github.png" alt=""></a>
+            <a href=""><img src="./img/fb.png" alt=""></a>
+            <a href=""><img src="./img/line.png" alt=""></a>
+        </div>
+    </nav>
+
+    <!-- 輪播 -->
+    <div class="slick">
+        <div class="slick_box">
+            <img src="./img/kyrie1.png" alt="">
+        </div>
+        <div class="slick_box">
+            <img src="./img/kyrie2.png" alt="">
+        </div>
+        <div class="slick_box">
+            <img src="./img/kyrie3.png" alt="">
+        </div>
+    </div>
+
+    <!-- CDN jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick輪播 CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slick').slick();
+
+        // let skick = document.getElementsByClassName('slick')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap");
+nav {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 5px #ccc;
+          box-shadow: 0 5px 5px #ccc;
+}
+
+nav .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .logo a:hover {
+  -webkit-filter: invert(90%) sepia(2%) saturate(3172%) hue-rotate(71deg) brightness(93%) contrast(120%);
+          filter: invert(90%) sepia(2%) saturate(3172%) hue-rotate(71deg) brightness(93%) contrast(120%);
+}
+
+nav .nav_title {
+  font-size: 24px;
+}
+
+nav .abut_icon a img {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .abut_icon a img:hover {
+  -webkit-filter: invert(90%) sepia(2%) saturate(3172%) hue-rotate(71deg) brightness(93%) contrast(120%);
+          filter: invert(90%) sepia(2%) saturate(3172%) hue-rotate(71deg) brightness(93%) contrast(120%);
+}
+
+.slick {
+  width: 100%;
+  height: 100vh;
+}
+
+.slick .slick_box {
+  width: 100%;
+  text-align: center;
+}
+
+.slick .slick_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 標楷體;
+}
+/*# sourceMappingURL=style.css.map */

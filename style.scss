@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap");
+$main_font: "Mochiy Pop P One", sans-serif;
+
+@import "nav";
+@import "slick";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 標楷體;
+}

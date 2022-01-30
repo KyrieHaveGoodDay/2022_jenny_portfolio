@@ -1,0 +1,17 @@
+.slick {
+    width: 100%;
+    height: 100vh;
+    .slick_box {
+        width: 100%;
+        // 對文字、照片
+        text-align: center;
+        // 對區塊
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    }
+}
