@@ -30,7 +30,7 @@
     </nav>
 
     <!-- 輪播 -->
-    <div class="slick">
+    <div id="slick" class="slick">
         <div class="slick_box">
             <img src="./img/kyrie1.png" alt="">
         </div>
@@ -42,12 +42,26 @@
         </div>
     </div>
 
+    <!-- 關於我 -->
+    <div class="about">
+        <p class="p_title">關於我</p>
+        <h1>Kyrie</h1>
+        <p class="p_content">我是一位網頁設計師，專門客製化設計</p>
+        <a href="">關於我</a>
+
+
+    </div>
+
+
+
+
+
     <!-- CDN jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- slick輪播 CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $('.slick').slick();
+        $('#slick').slick();
 
         // let skick = document.getElementsByClassName('slick')
     </script>
