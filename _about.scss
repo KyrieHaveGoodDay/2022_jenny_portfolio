@@ -10,6 +10,16 @@
         font-size: 180px;
         font-family: $main_font;
         font-weight: bold;
+        // 斷點
+
+        @media screen and (max-width: 1800px) {
+            /*  要做的事情  */
+            color: red;
+        }
+        @media screen and (max-width: 1700px) {
+            /*  要做的事情  */
+            color: green;
+        }
     }
     .p_content {
         font-size: 26px;

@@ -81,6 +81,20 @@ nav .abut_icon a img:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1800px) {
+  .about h1 {
+    /*  要做的事情  */
+    color: red;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .about h1 {
+    /*  要做的事情  */
+    color: green;
+  }
+}
+
 .about .p_content {
   font-size: 26px;
   margin: 20px 0 50px 0;
@@ -195,5 +209,14 @@ footer .ft_nav {
 
 footer .ft_nav a {
   margin: 0 10px;
+}
+
+.gotop {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
