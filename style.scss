@@ -4,10 +4,40 @@ $main_font: "Mochiy Pop P One", sans-serif;
 @import "nav";
 @import "slick";
 @import "about";
+@import "protfolio";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 標楷體;
+}
+
+// 頁尾
+footer {
+    color: #fff;
+    background: #000;
+    text-align: center;
+    padding: 40px 0;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .ft_img {
+        margin-top: 10px;
+        a {
+            margin: 0 10px;
+            img {
+                transition: 0.5s;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .ft_nav {
+        margin: 10px 0;
+        a {
+            margin: 0 10px;
+        }
+    }
 }

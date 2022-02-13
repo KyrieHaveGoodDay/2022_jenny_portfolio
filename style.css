@@ -100,11 +100,100 @@ nav .abut_icon a img:hover {
   color: #fff;
 }
 
+section {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  padding-bottom: 60px;
+}
+
+section p {
+  text-align: center;
+  font-size: 40px;
+}
+
+section .portfolio {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+section .portfolio .portfolio_box {
+  width: 30%;
+  margin-top: 30px;
+}
+
+section .portfolio .portfolio_box a {
+  text-decoration: none;
+}
+
+section .portfolio .portfolio_box a img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+section .portfolio .portfolio_box a .portfolio_data span {
+  color: #000;
+  font-size: 20px;
+}
+
+section .portfolio .portfolio_box a .portfolio_data .data_title {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+section .portfolio .portfolio_box a .portfolio_data .data_main {
+  margin-left: 30px;
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 標楷體;
+}
+
+footer {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .ft_img {
+  margin-top: 10px;
+}
+
+footer .ft_img a {
+  margin: 0 10px;
+}
+
+footer .ft_img a img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 40px;
+  height: 40px;
+}
+
+footer .ft_nav {
+  margin: 10px 0;
+}
+
+footer .ft_nav a {
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
