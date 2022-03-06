@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyrie</title>
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CDN slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -17,7 +20,7 @@
 
 <body id="top">
     <!-- 導覽列 -->
-    <nav>
+    <nav data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
         <div class="logo">
             <a href="">Kyrie</a>
         </div>
@@ -32,7 +35,9 @@
     <!-- 輪播 -->
     <div id="slick" class="slick">
         <div class="slick_box">
+            <!-- 桌機 -->
             <img src="./img/kyrie1.png" alt="">
+
         </div>
         <div class="slick_box">
             <img src="./img/kyrie2.png" alt="">
@@ -44,16 +49,19 @@
 
     <!-- 關於我 -->
     <div class="about">
-        <p class="p_title">關於我</p>
-        <h1>Kyrie</h1>
-        <p class="p_content">我是一位網頁設計師，專門客製化設計</p>
-        <a href="">關於我</a>
+        <p class="p_title" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">關於我</p>
+        <!-- data-aos:動畫名稱 -->
+        <!-- data-aos-duration:動畫持續時間 -->
+        <!-- data-aos-delay 延遲 -->
+        <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">Kyrie</h1>
+        <p class="p_content"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">我是一位網頁設計師，專門客製化設計</p>
+        <a href="" data-aos="fade-left" >關於我</a>
     </div>
 
     <section>
         <p>作品集</p>
         <div class="portfolio">
-            <div class="portfolio_box">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
                 <a href="">
                     <img src="./img/chocolate.jpg" alt="">
                     <div class="portfolio_data">
@@ -62,7 +70,7 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">
                 <a href="">
                     <img src="./img/city.jpg" alt="">
                     <div class="portfolio_data">
@@ -71,7 +79,7 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -80,7 +88,7 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1300" data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -89,7 +97,7 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600" data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -98,7 +106,7 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1800" data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -131,6 +139,8 @@
     </footer>
 
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- CDN jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JS CDN -->
@@ -138,9 +148,10 @@
     <!-- slick輪播 CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $('#slick').slick();
 
-        // let skick = document.getElementsByClassName('slick')
+        $('#slick').slick();
+        AOS.init();
+        
     </script>
 </body>
 
