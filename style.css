@@ -15,6 +15,21 @@ nav {
           box-shadow: 0 5px 5px #ccc;
 }
 
+@media screen and (max-width: 414px) {
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 15px;
+    margin: 0 !important;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+  }
+}
+
 nav .logo a {
   text-decoration: none;
   font-size: 30px;
@@ -33,6 +48,18 @@ nav .nav_title {
   font-size: 24px;
 }
 
+@media screen and (max-width: 414px) {
+  nav .nav_title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav .abut_icon {
+    display: none;
+  }
+}
+
 nav .abut_icon a img {
   width: 30px;
   height: 30px;
@@ -43,6 +70,59 @@ nav .abut_icon a img {
 nav .abut_icon a img:hover {
   -webkit-filter: invert(90%) sepia(2%) saturate(3172%) hue-rotate(71deg) brightness(93%) contrast(120%);
           filter: invert(90%) sepia(2%) saturate(3172%) hue-rotate(71deg) brightness(93%) contrast(120%);
+}
+
+nav .menu {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  nav .menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.mb_menu {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  .mb_menu {
+    display: block;
+    position: fixed;
+    top: 6%;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+  }
+  .mb_menu .menu_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .mb_menu .menu_main {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .mb_menu .menu_main .menu_list a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    gap: 10px;
+  }
+  .mb_menu .menu_main .menu_list a img {
+    width: 40px;
+    height: 40px;
+  }
+  .mb_menu .menu_main .menu_list a p {
+    color: #000;
+  }
 }
 
 .slick {

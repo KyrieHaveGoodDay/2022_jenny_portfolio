@@ -6,6 +6,17 @@ nav {
     align-items: center;
     // x軸 y軸 模糊 顏色
     box-shadow: 0 5px 5px #ccc;
+    @media screen and (max-width:414px){
+        justify-content: space-between;
+        padding: 0 15px;
+        // width: 95%;
+        margin: 0 !important;
+        overflow: hidden;
+       position:fixed;
+       top: 0;
+       background: #fff;
+       z-index: 10;
+    }
     .logo {
         a {
             text-decoration: none;
@@ -20,8 +31,16 @@ nav {
     }
     .nav_title {
         font-size: 24px;
+        @media screen and (max-width:414px){
+            display: none;
+           
+        }
     }
     .abut_icon {
+        @media screen and (max-width:414px){
+            display: none;
+           
+        }
         a {
             img {
                 width: 30px;
@@ -32,5 +51,50 @@ nav {
                 }
             }
         }
+    }
+    .menu{
+        display: none;
+        @media screen and (max-width:414px){
+            display: block;
+           width: 30px;
+           height: 30px;
+        }
+    }
+}
+
+.mb_menu{
+    display: none;
+    @media screen and (max-width:414px){
+        display: block;
+        position: fixed;
+        top: 6%;
+        width: 100%;
+        z-index: 10;
+        background: #fff;
+       .menu_title{
+           text-align: center;
+           font-size: 24px;
+           font-weight: bold;
+       }
+       .menu_main{
+           width: 150px;
+           margin: 0 auto;
+           .menu_list{
+               a{
+                   display: flex;
+                   align-items: center;
+                   text-decoration: none;
+                    gap: 10px;
+                   img{
+                       width: 40px;
+                       height: 40px;
+                   }
+                   p{
+                       color: #000;
+                       
+                   }
+               }
+           }
+       }
     }
 }

@@ -19,6 +19,32 @@
 </head>
 
 <body id="goToTop">
+    <!-- 選單 -->
+    <div class="mb_menu">
+        <p class="menu_title">作品集</p>
+        <div class="menu_main">
+            <div class="menu_list">
+                <a href="">
+                    <img src="./img/fb.png" alt="">
+                    <p>LiangZhenXian</p>
+                </a>
+            </div>
+            <div class="menu_list">
+                <a href="">
+                    <img src="./img/line.png" alt="">
+                    <p>bromin2014</p>
+                </a>
+            </div>
+            <div class="menu_list">
+                <a href="">
+                    <img src="./img/github.png" alt="">
+                    <p>kyriehavegoodday</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
     <!-- 導覽列 -->
     <nav data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
         <div class="logo">
@@ -30,6 +56,7 @@
             <a href=""><img src="./img/fb.png" alt=""></a>
             <a href=""><img src="./img/line.png" alt=""></a>
         </div>
+        <img id="menu" class="menu" src="./img/menu.png" alt="">
     </nav>
 
     <!-- 輪播 -->
@@ -152,6 +179,14 @@
         $('#slick').slick();
         AOS.init();
         
+        $('.mb_menu').slideUp();
+
+        // #menu
+        $('#menu').click(function(){
+            // do something
+            $('.mb_menu').slideToggle();
+        })
+
     </script>
 </body>
 
