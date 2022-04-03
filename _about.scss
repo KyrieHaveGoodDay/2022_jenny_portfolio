@@ -2,6 +2,10 @@
     width: 100%;
     height: 100vh;
     text-align: center;
+    @media screen and (max-width:414px){
+        height: 100%;
+        padding-bottom: 30px;
+    }
     .p_title {
         font-size: 36px;
         margin-top: 20px;
@@ -12,13 +16,16 @@
         font-weight: bold;
         // 斷點
 
-        @media screen and (max-width: 1800px) {
-            /*  要做的事情  */
-            color: red;
-        }
-        @media screen and (max-width: 1700px) {
-            /*  要做的事情  */
-            color: green;
+        // @media screen and (max-width: 1800px) {
+        //     /*  要做的事情  */
+        //     color: red;
+        // }
+        // @media screen and (max-width: 1700px) {
+        //     /*  要做的事情  */
+        //     color: green;
+        // }
+        @media screen and (max-width:414px){
+            font-size: 100px;
         }
     }
     .p_content {

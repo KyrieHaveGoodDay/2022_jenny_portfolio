@@ -70,6 +70,13 @@ nav .abut_icon a img:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 414px) {
+  .about {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+}
+
 .about .p_title {
   font-size: 36px;
   margin-top: 20px;
@@ -81,17 +88,9 @@ nav .abut_icon a img:hover {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 414px) {
   .about h1 {
-    /*  要做的事情  */
-    color: red;
-  }
-}
-
-@media screen and (max-width: 1700px) {
-  .about h1 {
-    /*  要做的事情  */
-    color: green;
+    font-size: 100px;
   }
 }
 
@@ -137,9 +136,33 @@ section .portfolio {
   gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  section .portfolio {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  section .portfolio {
+    padding: 0 10px;
+  }
+}
+
 section .portfolio .portfolio_box {
   width: 30%;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  section .portfolio .portfolio_box {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  section .portfolio .portfolio_box {
+    width: 100%;
+  }
 }
 
 section .portfolio .portfolio_box a {
@@ -213,10 +236,12 @@ footer .ft_nav a {
 
 .gotop {
   position: fixed;
-  right: 0;
-  bottom: 50px;
+  right: 10px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
   background: #fff;
   border-radius: 50%;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

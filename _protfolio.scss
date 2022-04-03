@@ -7,6 +7,7 @@ section {
         text-align: center;
         font-size: 40px;
         // margin-bottom: 10px;
+       
     }
     .portfolio {
         // rwd
@@ -19,9 +20,22 @@ section {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        @media screen and (max-width:768px){
+            width: 100%;
+        }
+        @media screen and (max-width:414px){
+            // display: block;
+            padding: 0 10px;
+        }
         .portfolio_box {
             width: 30%;
             margin-top: 30px;
+            @media screen and (max-width:768px){
+                width: 48%;
+            }
+            @media screen and (max-width:414px){
+                width: 100%;
+            }
             a {
                 text-decoration: none;
                 img {

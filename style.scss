@@ -19,7 +19,7 @@ footer {
     background: #000;
     text-align: center;
     padding: 40px 0;
-    
+
     a {
         text-decoration: none;
         color: #fff;
@@ -46,10 +46,11 @@ footer {
 // gotop
 .gotop {
     position: fixed;
-    right: 0;
-    bottom: 50px;
+    right: 10px;
+    bottom: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
     background: #fff;
     border-radius: 50%;
-    // 變成滑鼠手勢
-    cursor: pointer;
 }
