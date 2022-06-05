@@ -80,15 +80,17 @@
         <!-- data-aos:動畫名稱 -->
         <!-- data-aos-duration:動畫持續時間 -->
         <!-- data-aos-delay 延遲 -->
-        <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">Kyrie</h1>
-        <p class="p_content"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">我是一位網頁設計師，專門客製化設計</p>
-        <a href="" data-aos="fade-left" >關於我</a>
+        <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
+            Kyrie</h1>
+        <p class="p_content" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">我是一位網頁設計師，專門客製化設計</p>
+        <a href="" data-aos="fade-left">關於我</a>
     </div>
 
     <section>
         <p>作品集</p>
-        <div class="portfolio">
-            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+        <div id="portfolio" class="portfolio">
+            <!-- <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"
+                data-aos-once="true">
                 <a href="">
                     <img src="./img/chocolate.jpg" alt="">
                     <div class="portfolio_data">
@@ -97,7 +99,8 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800"
+                data-aos-once="true">
                 <a href="">
                     <img src="./img/city.jpg" alt="">
                     <div class="portfolio_data">
@@ -106,7 +109,8 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" data-aos-once="true">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100"
+                data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -115,7 +119,8 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1300" data-aos-once="true">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1300"
+                data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -124,7 +129,8 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600" data-aos-once="true">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1600"
+                data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -133,7 +139,8 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1800" data-aos-once="true">
+            <div class="portfolio_box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1800"
+                data-aos-once="true">
                 <a href="">
                     <img src="./img/coffee.jpg" alt="">
                     <div class="portfolio_data">
@@ -141,7 +148,7 @@
                         <span class="data_main">咖啡網頁</span>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
 
     </section>
@@ -164,7 +171,8 @@
         </div>
         <p>Copyright © 2010 - 2022 Kyire All rights reserved</p>
     </footer>
-    <img class="gotop" data-gt-target="#goToTop" data-gt-duration="1000" data-gt-offset="300" src="./img/gotop.png" alt="">
+    <img class="gotop" data-gt-target="#goToTop" data-gt-duration="1000" data-gt-offset="300" src="./img/gotop.png"
+        alt="">
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -174,20 +182,73 @@
     <script src="https://kyriehavegoodday.github.io/GoTo_Element/goto.js"></script>
     <!-- slick輪播 CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
 
         $('#slick').slick();
         AOS.init();
-        
-        $('.mb_menu').slideUp();
+
+        $('.mb_menu').slideUp(100);
 
         // #menu
-        $('#menu').click(function(){
+        $('#menu').click(function () {
             // do something
             $('.mb_menu').slideToggle();
         })
 
+        // 資料型態
+        // []陣列 Array
+        // {}物件 Object
+        let dataPortfolio = [
+            // 0
+            {
+                // 資料欄位:'資料'
+                img: 'city.jpg',
+                type: '類型-網頁',
+                title: '城式網頁',
+                link: 'https://kyriehavegoodday.github.io/Chocolate/'
+            },
+            // 1
+            {
+                // 資料欄位:'資料'
+                img: 'coffee.jpg',
+                type: '類型-網頁',
+                title: '咖啡網頁',
+                link: 'https://kyriehavegoodday.github.io/Chocolate/'
+            },
+            {
+                // 資料欄位:'資料'
+                img: 'coffee.jpg',
+                type: '類型-網頁',
+                title: '巧克力網頁1',
+                link: 'https://kyriehavegoodday.github.io/Chocolate/'
+            },
+            {
+                // 資料欄位:'資料'
+                img: 'chocolate.jpg',
+                type: '類型-網頁',
+                title: '巧克力網頁2',
+                link: 'https://kyriehavegoodday.github.io/Chocolate/'
+            },
+            {
+                // 資料欄位:'資料'
+                img: 'chocolate.jpg',
+                type: '類型-網頁',
+                title: '巧克力網頁3',
+                link: 'https://kyriehavegoodday.github.io/Chocolate/'
+            },
+            {
+                // 資料欄位:'資料'
+                img: 'chocolate.jpg',
+                type: '類型-網頁',
+                title: '巧克力網頁4',
+                link: 'https://kyriehavegoodday.github.io/Chocolate/'
+            }
+        ];
+
+
     </script>
+    <script src="./all.js"></script>
 </body>
 
 </html>
