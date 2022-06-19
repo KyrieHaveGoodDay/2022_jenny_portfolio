@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from</title>
+      <!-- aos -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <!-- CDN slick -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  
+      <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <nav id="main_from_nav"></nav>
+
+
+     <!-- aos -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <!-- CDN jquery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- 回到頂端 -->
+     <script src="https://kyriehavegoodday.github.io/GoTo_Element/goto.js"></script>
+     <!-- slick輪播 CDN -->
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+     <script>
+ 
+         $('#slick').slick();
+         AOS.init();
+ 
+         $('.mb_menu').slideUp(100);
+ 
+         // #menu
+         $('#menu').click(function () {
+             // do something
+             $('.mb_menu').slideToggle();
+         })
+ 
+         // 資料型態
+         // []陣列 Array
+         // {}物件 Object
+         let dataPortfolio = [
+             // 0
+             {
+                 // 資料欄位:'資料'
+                 img: 'city.jpg',
+                 type: '類型-網頁',
+                 title: '城式網頁',
+                 link: 'https://kyriehavegoodday.github.io/Chocolate/'
+             },
+             // 1
+             {
+                 // 資料欄位:'資料'
+                 img: 'coffee.jpg',
+                 type: '類型-網頁',
+                 title: '咖啡網頁',
+                 link: 'https://kyriehavegoodday.github.io/Chocolate/'
+             },
+             {
+                 // 資料欄位:'資料'
+                 img: 'coffee.jpg',
+                 type: '類型-網頁',
+                 title: '巧克力網頁1',
+                 link: 'https://kyriehavegoodday.github.io/Chocolate/'
+             },
+             {
+                 // 資料欄位:'資料'
+                 img: 'chocolate.jpg',
+                 type: '類型-網頁',
+                 title: '巧克力網頁2',
+                 link: 'https://kyriehavegoodday.github.io/Chocolate/'
+             },
+             {
+                 // 資料欄位:'資料'
+                 img: 'chocolate.jpg',
+                 type: '類型-網頁',
+                 title: '巧克力網頁3',
+                 link: 'https://kyriehavegoodday.github.io/Chocolate/'
+             },
+             {
+                 // 資料欄位:'資料'
+                 img: 'chocolate.jpg',
+                 type: '類型-網頁',
+                 title: '巧克力網頁4',
+                 link: 'https://kyriehavegoodday.github.io/Chocolate/'
+             }
+         ];
+ 
+ 
+     </script>
+     <script src="./all.js"></script>
+     <script>
+        nav_component(nav_from,'main_from_nav')
+     </script>
+</body>
+</html>
